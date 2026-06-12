@@ -12,7 +12,7 @@ const socials = [
 
 export function Hero() {
   return (
-    <section id="top" className="relative mx-auto max-w-5xl px-6 pt-16 pb-24 md:pt-24">
+    <section id="top" className="relative mx-auto max-w-7xl px-6 pt-16 pb-24 md:pt-24">
       <div className="grid items-center gap-10 md:grid-cols-2">
         <div className="relative">
           <div className="hidden md:flex absolute left-0 top-1/2 -translate-x-12 -translate-y-1/2 flex-col gap-5">

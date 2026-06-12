@@ -10,7 +10,7 @@ const paragraphs = [
 
 export function AboutSection() {
   return (
-    <section id="about" className="mx-auto max-w-5xl px-6 py-24">
+    <section id="about" className="mx-auto max-w-7xl px-6 py-24">
       <div className="mb-8">
         <h2 className="font-heading text-3xl font-bold tracking-tight md:text-4xl">README</h2>
         <p className="mt-1 text-muted-foreground">Um pouco sobre mim</p>

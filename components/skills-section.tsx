@@ -100,7 +100,7 @@ export function SkillsSection() {
   return (
     <section id="skills" ref={sectionRef} className="relative" style={{ height: `${skills.length * 100}vh` }}>
       <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden">
-        <div className="mx-auto w-full max-w-5xl px-6">
+        <div className="mx-auto w-full max-w-7xl px-6">
           <div className="mb-8">
             <h2 className="font-heading text-3xl font-bold tracking-tight md:text-4xl">Minhas principais skills</h2>
             <p className="mt-1 text-muted-foreground">O que eu faço</p>
