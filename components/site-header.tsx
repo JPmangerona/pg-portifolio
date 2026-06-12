@@ -1,6 +1,6 @@
 "use client"
 
-import { Moon, Sun, Mail } from "lucide-react"
+import { Moon, Sun } from "lucide-react"
 import { useTheme } from "@/components/use-theme"
 
 const NAV = [
@@ -14,17 +14,12 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
         <a href="#top" className="flex items-center gap-1 font-mono text-lg font-bold tracking-tight">
-          <span className="text-primary">{"<"}</span>
+          <span className="text-[#820AD1]">{"<"}</span>
           <span>JP_MANGERONA</span>
-          <span className="text-primary">{"/>"}</span>
+          <span className="text-[#820AD1]">{"/>"}</span>
         </a>
-
-        <div className="hidden items-center gap-2 text-sm text-muted-foreground md:flex">
-          <Mail className="size-4" aria-hidden="true" />
-          <span>joaopedromangerona@gmail.com</span>
-        </div>
 
         <nav className="flex items-center gap-1 sm:gap-2">
           {NAV.map((item) => (

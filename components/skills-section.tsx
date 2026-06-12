@@ -102,11 +102,11 @@ export function SkillsSection() {
       <div className="sticky top-0 flex h-screen flex-col justify-center overflow-hidden">
         <div className="mx-auto w-full max-w-7xl px-6">
           <div className="mb-8">
-            <h2 className="font-heading text-3xl font-bold tracking-tight md:text-4xl">Minhas principais skills</h2>
+            <h2 className="font-heading text-3xl font-bold tracking-tight md:text-4xl">Skills</h2>
             <p className="mt-1 text-muted-foreground">O que eu faço</p>
             <div className="mt-3 flex items-center gap-2">
-              <span className="size-2 rounded-full bg-primary" />
-              <span className="h-0.5 w-32 bg-primary" />
+              <span className="size-2 rounded-full bg-foreground" />
+              <span className="h-0.5 w-32 bg-foreground" />
             </div>
           </div>
 

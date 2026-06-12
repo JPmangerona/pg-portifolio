@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero"
 import { SkillsSection } from "@/components/skills-section"
 import { WorksSection } from "@/components/works-section"
 import { AboutSection } from "@/components/about-section"
+import { TimelineSection } from "@/components/timeline-section"
 import { SiteFooter } from "@/components/site-footer"
 
 export default function Page() {
@@ -14,6 +15,7 @@ export default function Page() {
         <SkillsSection />
         <WorksSection />
         <AboutSection />
+        <TimelineSection />
       </main>
       <SiteFooter />
     </div>

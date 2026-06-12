@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "motion/react"
-import { ArrowDown } from "lucide-react"
+import { Download } from "lucide-react"
 import { GithubIcon, LinkedinIcon, YoutubeIcon } from "@/components/brand-icons"
 
 const socials = [
@@ -52,7 +52,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.12 }}
-            className="mt-5 text-sm font-semibold uppercase tracking-widest text-primary"
+            className="mt-5 text-sm font-semibold uppercase tracking-widest text-[#820AD1]"
           >
             Dev Fullstack
           </motion.p>
@@ -63,8 +63,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.18 }}
             className="mt-4 max-w-md text-pretty leading-relaxed text-muted-foreground"
           >
-            Desenvolvedor full-stack de Sao Paulo, Brasil, com experiencia solida
-            na construcao de aplicacoes complexas usando tecnologias de ponta.
+            Desenvolvedor Fullstack focado no ecossistema TypeScript. Curso Atualmente Pós-Graduação em Engenharia de IA Aplicada.
           </motion.p>
 
           <motion.div
@@ -77,8 +76,8 @@ export function Hero() {
               href="#works"
               className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
             >
-              Ver trabalhos
-              <ArrowDown className="size-4" aria-hidden="true" />
+              Download CV
+              <Download className="size-4" aria-hidden="true" />
             </a>
             <div className="flex items-center gap-4 md:hidden">
               {socials.map(({ icon: Icon, label, href }) => (
