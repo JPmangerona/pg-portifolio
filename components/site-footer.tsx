@@ -34,7 +34,11 @@ export function SiteFooter() {
 
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-6 py-6 text-sm text-muted-foreground sm:flex-row">
-          <span className="font-mono font-bold text-foreground">{"<JP_MANGERONA/>"}</span>
+          <span className="font-mono font-bold text-foreground">
+            <span className="text-[#820AD1]">{"<"}</span>
+            <span>JP_MANGERONA</span>
+            <span className="text-[#820AD1]">{"/>"}</span>
+          </span>
           <nav className="flex gap-5">
             <a href="#works" className="transition-colors hover:text-primary">Trabalhos</a>
             <a href="#skills" className="transition-colors hover:text-primary">Skills</a>

@@ -73,7 +73,8 @@ export function Hero() {
             className="mt-8 flex items-center gap-4"
           >
             <a
-              href="#works"
+              href="/cv-jp-mangerona.pdf"
+              download
               className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
             >
               Download CV

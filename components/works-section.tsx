@@ -6,86 +6,135 @@ import { ProjectModal, type Project } from "./project-modal"
 
 const projects: Project[] = [
   {
-    name: "Collage.fm",
-    type: "Destaques",
-    desc: "Crie belas colagens musicais a partir do seu Last.fm",
-    fullDesc: "Muito animado pra compartilhar meu novo projeto: Collage.fm — uma ferramenta que transforma seus dados do Last.fm em colagens musicais visuais e personalizadas.\n\nComo usuário assíduo do Last.fm e fã de plataformas como TapMusic e LastCollage, decidi criar minha própria versão de um gerador de colagens musicais, com foco em uma interface moderna, responsiva e de alta performance.",
+    name: "Site Catálogo em PHP",
+    type: "Projetos",
+    desc: "Plataforma de catálogo online desenvolvida com arquitetura robusta em PHP.",
+    fullDesc: "Criação de uma plataforma de catálogo digital personalizada utilizando PHP para o portfólio e serviços de Junior Rivoredo. O sistema permite o gerenciamento dinâmico de produtos, categorias e contatos diretos do painel de administração customizado.",
     features: [
-      "Gere colagens dos seus álbuns mais ouvidos no Last.fm",
-      "Escolha diferentes períodos de tempo (1 semana, 1 mês, 3 meses, 6 meses, 12 meses ou todo o histórico)",
-      "Selecione diferentes tamanhos de grade (3x3, 4x4, 5x5 ou 10x10)",
-      "Personalize sua colagem com opções de título e contagem de reproduções",
-      "Faça o download de imagens em diferentes níveis de qualidade",
-      "Interface moderna e responsiva com suporte a modo claro/escuro e navegação acessível",
-      "Internacionalização com suporte a Português e Inglês"
+      "Painel administrativo sob medida para gerenciar catálogo",
+      "Otimização de SEO dinâmico para cada item cadastrado",
+      "Sistema de e-mail integrado para solicitações de orçamento",
+      "Banco de dados otimizado para consultas rápidas"
     ],
     techStack: [
-      "Next.js 15 com App Router",
-      "React 19",
-      "TailwindCSS 4",
-      "Shadcn UI para componentes",
-      "Framer Motion para animações",
-      "Next-Intl para Internacionalização",
-      "React Hook Form e Zod para validação de formulários",
-      "Integração com a API do Last.fm"
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "Bootstrap",
+      "Arquitetura MVC"
     ],
-    date: "13 de Março de 2025",
-    coverImage: "/placeholder.jpg",
+    date: "2025",
+    coverImage: "/juniorrivoredo.png",
     links: {
-      demo: "https://collage.fm",
+      demo: "",
       repo: "https://github.com/JPmangerona",
       linkedin: "https://linkedin.com/in/jp-mangerona"
     }
   },
   {
-    name: "The Movie Guide",
-    type: "Destaques",
-    desc: "Um guia de filmes moderno com interface rica.",
-    fullDesc: "Um portal completo para você buscar e favoritar seus filmes preferidos, consumindo uma API externa e mostrando detalhes ricos sobre a produção, elenco e notas.",
+    name: "Minha Fábrica Web App",
+    type: "Projetos",
+    desc: "Aplicação web completa para gestão industrial com backend robusto.",
+    fullDesc: "Desenvolvimento de um web app corporativo (Minha Fábrica) focado na gestão e monitoramento de processos de fabricação. A aplicação oferece controle de ordens de produção, cadastro de insumos e relatórios analíticos de eficiência das máquinas.",
     features: [
-      "Busca em tempo real com debounce",
-      "Página de detalhes com trailer e informações de elenco",
-      "Sistema de favoritos usando LocalStorage"
+      "Autenticação segura JWT e controle de permissões por cargo (RBAC)",
+      "Gestão completa de ordens de serviço e status de produção",
+      "Painel analítico (Dashboard) com gráficos de produtividade",
+      "Backend modular e escalável com tipagem forte"
     ],
     techStack: [
+      "TypeScript",
+      "Node.js",
+      "Express",
       "React",
-      "Vite",
+      "PostgreSQL",
+      "Chart.js"
+    ],
+    date: "2025",
+    coverImage: "/minhafabrica.png",
+    links: {
+      demo: "",
+      repo: "https://github.com/JPmangerona",
+      linkedin: "https://linkedin.com/in/jp-mangerona"
+    }
+  },
+  {
+    name: "Wise App (Nest.js & TS)",
+    type: "Projetos",
+    desc: "Aplicativo web moderno baseado em arquitetura de microsserviços.",
+    fullDesc: "Construção de uma aplicação web robusta utilizando a estrutura do Nest.js. O sistema conta com arquitetura limpa (Clean Architecture), injeção de dependência nativa, monitoramento de saúde do app e suporte a múltiplos bancos de dados.",
+    features: [
+      "Arquitetura escalável modular com Nest.js",
+      "Testes automatizados integrados (Jest)",
+      "Validação rigorosa de dados com Class-Validator",
+      "Documentação de API automática com Swagger/OpenAPI"
+    ],
+    techStack: [
+      "Nest.js",
+      "TypeScript",
+      "Prisma ORM",
+      "Jest",
+      "Swagger API"
+    ],
+    date: "2025",
+    coverImage: "/wise.png",
+    links: {
+      demo: "",
+      repo: "https://github.com/JPmangerona",
+      linkedin: "https://linkedin.com/in/jp-mangerona"
+    }
+  },
+  {
+    name: "Criação da Opty",
+    type: "Projetos",
+    desc: "Fundação da minha própria empresa de automações e desenvolvimento de software.",
+    fullDesc: "Criação da Opty Automações, empresa pela qual presto serviços especializados de desenvolvimento de software, integrações de sistemas, automação de processos de negócios e consultoria tecnológica sob medida para diversas empresas parceiras.",
+    features: [
+      "Prestação de serviços corporativos (B2B) de desenvolvimento de software",
+      "Modelagem de integrações e arquitetura de sistemas personalizados",
+      "Consultoria de tecnologia e automação de processos internos",
+      "Entrega ágil de projetos focados em ganho de eficiência"
+    ],
+    techStack: [
+      "Consultoria B2B",
+      "Arquitetura de Software",
+      "Integrações de APIs",
+      "Automação de Processos"
+    ],
+    date: "2024",
+    coverImage: "/opty2.png",
+    links: {
+      demo: "",
+      repo: "https://github.com/JPmangerona",
+      linkedin: "https://linkedin.com/in/jp-mangerona"
+    }
+  },
+  {
+    name: "Site Institucional para Advocacia",
+    type: "Projetos",
+    desc: "Design premium e elegante para escritório de advocacia.",
+    fullDesc: "Desenvolvimento de um site institucional de alto padrão voltado para o setor jurídico (advogada). A interface foi projetada com design minimalista e sóbrio, transmitindo confiança, credibilidade e profissionalismo, com área dedicada para artigos e agendamento de consultas online.",
+    features: [
+      "Design elegante, clean e profissional para o setor de advocacia",
+      "Área de Blog/Artigos jurídicos integrada",
+      "Agendamento direto de consultas online",
+      "Totalmente responsivo e otimizado para dispositivos móveis"
+    ],
+    techStack: [
+      "Next.js",
+      "React",
       "TailwindCSS",
       "Framer Motion",
-      "TMDB API"
+      "Headless CMS"
     ],
-    date: "10 de Fevereiro de 2025",
-    coverImage: "/placeholder.jpg",
+    date: "2025",
+    coverImage: "/advogada.png",
     links: {
-      demo: "https://themovieguide.com",
+      demo: "",
       repo: "https://github.com/JPmangerona",
       linkedin: "https://linkedin.com/in/jp-mangerona"
     }
   },
-  {
-    name: "Daily Weather",
-    type: "Destaques",
-    desc: "Previsão do tempo precisa e em tempo real.",
-    fullDesc: "Um aplicativo de clima limpo e direto ao ponto que usa a geolocalização do usuário para entregar a previsão do tempo exata e em tempo real com belas imagens de fundo dinâmicas.",
-    features: [
-      "Geolocalização automática do usuário",
-      "Previsão para os próximos 7 dias",
-      "Imagens de fundo que mudam de acordo com o clima atual"
-    ],
-    techStack: [
-      "HTML5",
-      "CSS3",
-      "JavaScript Vanilla",
-      "OpenWeather API"
-    ],
-    date: "05 de Janeiro de 2025",
-    coverImage: "/placeholder.jpg",
-    links: {
-      demo: "https://dailyweather.com",
-      repo: "https://github.com/JPmangerona",
-      linkedin: "https://linkedin.com/in/jp-mangerona"
-    }
-  }
 ]
 
 export function WorksSection() {
@@ -116,13 +165,13 @@ export function WorksSection() {
             >
               {/* Cover Image */}
               <div className="relative aspect-video w-full overflow-hidden bg-muted">
-                <img 
-                  src={p.coverImage} 
-                  alt={p.name} 
+                <img
+                  src={p.coverImage}
+                  alt={p.name}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/60 transition-opacity duration-500 group-hover:bg-black/50" />
-                
+
                 {/* Overlay Content */}
                 <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
                   <h3 className="font-heading text-2xl font-bold text-white drop-shadow-md text-center">{p.name}</h3>
@@ -136,7 +185,7 @@ export function WorksSection() {
                   </div>
                 </div>
               </div>
-              
+
               {/* Hover bottom bar */}
               <div className="absolute bottom-0 left-0 right-0 translate-y-[120%] flex items-center justify-between p-4 transition-transform duration-300 group-hover:translate-y-0 bg-background/95 backdrop-blur-md border-t border-border rounded-b-xl">
                 <span className="text-xs font-medium text-muted-foreground">{p.date}</span>
@@ -150,9 +199,9 @@ export function WorksSection() {
       </section>
 
       {/* Preview Modal */}
-      <ProjectModal 
-        project={selectedProject} 
-        onClose={() => setSelectedProject(null)} 
+      <ProjectModal
+        project={selectedProject}
+        onClose={() => setSelectedProject(null)}
       />
     </>
   )
