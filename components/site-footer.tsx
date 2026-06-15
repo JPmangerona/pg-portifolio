@@ -6,13 +6,21 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-border">
       <div className="mx-auto max-w-5xl px-6 py-20 text-center">
-        <h2 className="font-heading text-2xl font-bold tracking-tight">Vamos conversar</h2>
-        <p className="mt-3 text-sm text-muted-foreground">São Paulo, Brasil</p>
+        <p className="text-sm text-muted-foreground"></p>
+        <h2 className="mt-1 font-heading text-2xl font-bold tracking-tight">Contatos</h2>
         <a
           href="mailto:joaopedromangerona@gmail.com"
-          className="mt-1 inline-block font-heading text-2xl font-bold tracking-tight transition-colors hover:text-primary"
+          className="mt-1 block font-heading text-lg font-medium tracking-tight transition-colors hover:text-primary"
         >
           joaopedromangerona@gmail.com
+        </a>
+        <a
+          href="https://wa.me/5543999502889"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-1 block font-heading text-base font-medium transition-colors hover:text-primary"
+        >
+          (43) 99950-2889
         </a>
         <div className="mt-8 flex items-center justify-center gap-3">
           {[
@@ -39,12 +47,13 @@ export function SiteFooter() {
             <span>JP_MANGERONA</span>
             <span className="text-[#820AD1]">{"/>"}</span>
           </span>
-          <nav className="flex gap-5">
-            <a href="#works" className="transition-colors hover:text-primary">Trabalhos</a>
+          <nav className="flex flex-wrap gap-5 justify-center sm:justify-start">
             <a href="#skills" className="transition-colors hover:text-primary">Skills</a>
-            <a href="#about" className="transition-colors hover:text-primary">Sobre</a>
+            <a href="#works" className="transition-colors hover:text-primary">Destaques</a>
+            <a href="#about" className="transition-colors hover:text-primary">Ferramentas</a>
+            <a href="#experience" className="transition-colors hover:text-primary">Experiência</a>
           </nav>
-          <span>© 2026 JP_MANGERONA</span>
+          <span>© 2026 OPTY Automações.</span>
         </div>
         <div className="flex h-1.5 w-full">
           <span className="flex-1 bg-primary" />

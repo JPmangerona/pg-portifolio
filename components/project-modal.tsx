@@ -48,7 +48,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
           >
             {/* Left side: Media & Links */}
             <div className="flex w-full flex-col border-b border-border md:w-1/2 lg:w-[55%] md:border-b-0 md:border-r">
-              <div className="relative h-56 w-full bg-muted md:h-auto md:flex-1">
+              <div className="relative h-56 w-full bg-[#FAF8F5] md:h-auto md:flex-1 overflow-hidden flex items-center justify-center">
                 {project.videoUrl ? (
                   <iframe
                     src={project.videoUrl}
@@ -56,42 +56,32 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                     allowFullScreen
                   />
                 ) : (
-                  <img
-                    src={project.coverImage || "/placeholder.jpg"}
-                    alt={project.name}
-                    className="h-full w-full object-cover"
-                  />
+                  <div className="w-full overflow-hidden flex items-center justify-center">
+                    <img
+                      src={project.coverImage || "/placeholder.jpg"}
+                      alt={project.name}
+                      className="w-full h-auto scale-[1.04]"
+                    />
+                  </div>
                 )}
               </div>
-              <div className="flex flex-wrap gap-3 bg-muted/10 p-5 border-t border-border">
-                {project.links.demo && (
-                  <a
-                    href={project.links.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-                  >
-                    Acessar projeto
-                  </a>
-                )}
+              <div className="flex flex-wrap items-center gap-3 bg-muted/10 p-5 border-t border-border">
+                <a
+                  href={project.links.demo || "#"}
+                  target={project.links.demo ? "_blank" : undefined}
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-md bg-[#820AD1] hover:bg-[#820AD1]/95 text-white dark:bg-white dark:hover:bg-white/90 dark:text-black px-4 py-2 text-sm font-medium transition-colors shadow-sm"
+                >
+                  Abrir site
+                </a>
                 {project.links.repo && (
                   <a
                     href={project.links.repo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
+                    className="inline-flex items-center justify-center rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
                   >
                     Acessar repositório
-                  </a>
-                )}
-                {project.links.linkedin && (
-                  <a
-                    href={project.links.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="rounded-md border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
-                  >
-                    Ver post no Linkedin
                   </a>
                 )}
               </div>

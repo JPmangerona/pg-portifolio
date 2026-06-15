@@ -6,7 +6,7 @@ import { ProjectModal, type Project } from "./project-modal"
 
 const projects: Project[] = [
   {
-    name: "Site Catálogo em PHP",
+    name: "PHP Monolito - Html, Css",
     type: "Projetos",
     desc: "Plataforma de catálogo online desenvolvida com arquitetura robusta em PHP.",
     fullDesc: "Criação de uma plataforma de catálogo digital personalizada utilizando PHP para o portfólio e serviços de Junior Rivoredo. O sistema permite o gerenciamento dinâmico de produtos, categorias e contatos diretos do painel de administração customizado.",
@@ -26,13 +26,13 @@ const projects: Project[] = [
     date: "2025",
     coverImage: "/juniorrivoredo.png",
     links: {
-      demo: "",
+      demo: "https://culinariajuniorrivoredo.up.railway.app/",
       repo: "https://github.com/JPmangerona",
       linkedin: "https://linkedin.com/in/jp-mangerona"
     }
   },
   {
-    name: "Minha Fábrica Web App",
+    name: "Typescript - Express, React",
     type: "Projetos",
     desc: "Aplicação web completa para gestão industrial com backend robusto.",
     fullDesc: "Desenvolvimento de um web app corporativo (Minha Fábrica) focado na gestão e monitoramento de processos de fabricação. A aplicação oferece controle de ordens de produção, cadastro de insumos e relatórios analíticos de eficiência das máquinas.",
@@ -53,13 +53,13 @@ const projects: Project[] = [
     date: "2025",
     coverImage: "/minhafabrica.png",
     links: {
-      demo: "",
+      demo: "https://minhafabrica.up.railway.app/",
       repo: "https://github.com/JPmangerona",
       linkedin: "https://linkedin.com/in/jp-mangerona"
     }
   },
   {
-    name: "Wise App (Nest.js & TS)",
+    name: "Nest.js, Next, Multitenant",
     type: "Projetos",
     desc: "Aplicativo web moderno baseado em arquitetura de microsserviços.",
     fullDesc: "Construção de uma aplicação web robusta utilizando a estrutura do Nest.js. O sistema conta com arquitetura limpa (Clean Architecture), injeção de dependência nativa, monitoramento de saúde do app e suporte a múltiplos bancos de dados.",
@@ -79,13 +79,13 @@ const projects: Project[] = [
     date: "2025",
     coverImage: "/wise.png",
     links: {
-      demo: "",
+      demo: "https://wise-advocacia.up.railway.app/",
       repo: "https://github.com/JPmangerona",
       linkedin: "https://linkedin.com/in/jp-mangerona"
     }
   },
   {
-    name: "Criação da Opty",
+    name: "Página animada",
     type: "Projetos",
     desc: "Fundação da minha própria empresa de automações e desenvolvimento de software.",
     fullDesc: "Criação da Opty Automações, empresa pela qual presto serviços especializados de desenvolvimento de software, integrações de sistemas, automação de processos de negócios e consultoria tecnológica sob medida para diversas empresas parceiras.",
@@ -104,13 +104,13 @@ const projects: Project[] = [
     date: "2024",
     coverImage: "/opty2.png",
     links: {
-      demo: "",
+      demo: "https://pg-opty.vercel.app/",
       repo: "https://github.com/JPmangerona",
       linkedin: "https://linkedin.com/in/jp-mangerona"
     }
   },
   {
-    name: "Site Institucional para Advocacia",
+    name: "Deploy",
     type: "Projetos",
     desc: "Design premium e elegante para escritório de advocacia.",
     fullDesc: "Desenvolvimento de um site institucional de alto padrão voltado para o setor jurídico (advogada). A interface foi projetada com design minimalista e sóbrio, transmitindo confiança, credibilidade e profissionalismo, com área dedicada para artigos e agendamento de consultas online.",
@@ -130,7 +130,7 @@ const projects: Project[] = [
     date: "2025",
     coverImage: "/advogada.png",
     links: {
-      demo: "",
+      demo: "https://advocaciajessicalima.com.br/",
       repo: "https://github.com/JPmangerona",
       linkedin: "https://linkedin.com/in/jp-mangerona"
     }
@@ -168,7 +168,7 @@ export function WorksSection() {
                 <img
                   src={p.coverImage}
                   alt={p.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover scale-[1.04] transition-transform duration-500 group-hover:scale-[1.10]"
                 />
                 <div className="absolute inset-0 bg-black/60 transition-opacity duration-500 group-hover:bg-black/50" />
 

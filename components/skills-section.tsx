@@ -6,22 +6,22 @@ import { Layout, Server, Smartphone } from "lucide-react"
 
 const skills = [
   {
-    icon: Layout,
-    title: "FRONTEND",
-    text: "Construo aplicacoes client-side com recursos modernos como SPA e mantenho um estilo semantico, seguindo boas praticas de SEO usando Next.js, React, TailwindCSS e Motion.",
-    tags: ["React", "Next.js", "TailwindCSS", "Motion"],
-  },
-  {
     icon: Server,
     title: "BACKEND",
-    text: "Desenvolvo aplicacoes escalaveis e de facil manutencao usando tecnologias de ponta como Node.js, Docker, Redis, PostgreSQL e MongoDB.",
-    tags: ["Node.js", "Docker", "PostgreSQL", "Redis"],
+    text: "Iniciei desenvolvendo em Java, porém migrei para Typescript para uma maior agilidade em entrega de projetos. Hoje foco em arquiteturas limpas e escaláveis.",
+    tags: ["Java", "Typescript", "Nest.js", "Express"],
+  },
+  {
+    icon: Layout,
+    title: "FRONTEND",
+    text: "Construção de interfaces com animações, viso sempre a implementação com foco na experiência do usúario.",
+    tags: ["React", "Next.js", "TailwindCSS"],
   },
   {
     icon: Smartphone,
-    title: "MOBILE",
-    text: "Crio aplicativos nativos com experiencia fluida e performatica, focando em interfaces consistentes entre plataformas com React Native e Flutter.",
-    tags: ["React Native", "Flutter", "Expo"],
+    title: "PROGRAMAÇÃO COM IA ",
+    text: "Acredito que a IA pode ser seu maior aliado ou inimigo, por isso preso a revisão em cada linha implementada para visar uma programação mais assertiva e segura.",
+    tags: ["Skill", "MCP", "Rules"],
   },
 ]
 

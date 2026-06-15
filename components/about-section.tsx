@@ -36,8 +36,16 @@ const TECH_CATEGORIES: TechCategory[] = [
     title: "BANCOS",
     items: [
       { initials: "P", name: "PostgreSQL", color: "from-blue-950 to-blue-900 border-blue-800 text-blue-400" },
-      { initials: "My", name: "MySQL", color: "from-orange-950 to-orange-900 border-orange-800 text-orange-450" },
+      { initials: "My", name: "MySQL", color: "from-orange-950 to-orange-900 border-orange-850 text-orange-400" },
       { initials: "M", name: "MongoDB", color: "from-green-950 to-green-900 border-green-800 text-green-400" },
+    ],
+  },
+  {
+    title: "DEVOPS",
+    items: [
+      { initials: "R", name: "Railway", color: "from-emerald-950 to-emerald-900 border-emerald-800 text-emerald-400" },
+      { initials: "G", name: "GitHub", color: "from-zinc-800 to-zinc-900 border-zinc-700 text-zinc-300" },
+      { initials: "D", name: "Docker", color: "from-sky-950 to-sky-900 border-sky-850 text-sky-400" },
     ],
   },
   {
@@ -46,30 +54,23 @@ const TECH_CATEGORIES: TechCategory[] = [
       { initials: "O", name: "Obsidian", color: "from-indigo-950 to-indigo-900 border-indigo-800 text-indigo-400" },
       { initials: "IA", name: "Codex, Claude e Antigravity", color: "from-blue-950 to-blue-900 border-blue-800 text-blue-400" },
       { initials: "UML", name: "Astah UML", color: "from-blue-950 to-blue-900 border-blue-800 text-blue-400" },
+      { initials: "n8n", name: "n8n", color: "from-red-950 to-red-900 border-red-800 text-red-400" },
     ],
   },
 
-  {
-    title: "DEVOPS",
-    items: [
-      { initials: "Nx", name: "Railway", color: "from-emerald-950 to-emerald-900 border-emerald-800 text-emerald-400" },
-      { initials: "G", name: "GitHub", color: "from-zinc-800 to-zinc-900 border-zinc-700 text-zinc-300" },
-      { initials: "D", name: "Docker", color: "from-sky-950 to-sky-900 border-sky-850 text-sky-400" },
-    ],
-  },
+
 ]
 
 export function AboutSection() {
   return (
     <section id="about" className="mx-auto max-w-7xl px-6 py-24">
       {/* Title section */}
-      <div className="mb-12">
-        <h2 className="font-heading text-4xl font-bold tracking-tight md:text-5xl leading-tight">
-          Ferramentas <span className="italic text-[#820AD1]"></span>
-        </h2>
-        <p className="mt-4 max-w-2xl text-base text-muted-foreground">
-          Tecnologias que uso diariamente em produção — escolhidas pelo que entregam, não pela última moda.
-        </p>
+      <div className="mb-10">
+        <h2 className="font-heading text-3xl font-bold tracking-tight md:text-4xl">Ferramentas</h2>
+        <div className="mt-3 flex items-center gap-2">
+          <span className="size-2 rounded-full bg-foreground" />
+          <span className="h-0.5 w-16 bg-foreground" />
+        </div>
       </div>
 
       {/* Grid container */}

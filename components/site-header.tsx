@@ -4,9 +4,10 @@ import { Moon, Sun } from "lucide-react"
 import { useTheme } from "@/components/use-theme"
 
 const NAV = [
-  { label: "Trabalhos", href: "#works" },
   { label: "Skills", href: "#skills" },
-  { label: "Sobre", href: "#about" },
+  { label: "Destaques", href: "#works" },
+  { label: "Ferramentas", href: "#about" },
+  { label: "Experiência", href: "#experience" },
 ]
 
 export function SiteHeader() {

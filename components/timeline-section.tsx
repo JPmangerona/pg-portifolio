@@ -90,6 +90,15 @@ const EXPERIENCES: Experience[] = [
     image: "/mercado-livre-logo-png_seeklogo-264236.png",
   },
   {
+    id: "21",
+    year: "2023",
+    title: "Bolsa 100% na Faculdade",
+    company: "Graduação",
+    description: "Conquista de bolsa de estudos de 100% para ingresso no ensino superior na área de tecnologia.",
+    type: "Carreira",
+    image: "/faculdade-fachada.jpeg",
+  },
+  {
     id: "10",
     year: "2024",
     title: "Participação em Incubação",
@@ -142,6 +151,15 @@ const EXPERIENCES: Experience[] = [
     description: "Desenvolvimento de aplicativo web de alta performance com arquitetura baseada no framework Nest.js.",
     type: "Projetos",
     image: "/wise2.png",
+  },
+  {
+    id: "16",
+    year: "2025",
+    title: "Desenvolvimento de App Mobile",
+    company: "Opty Automações",
+    description: "Atualmente desenvolvendo um aplicativo mobile moderno e de alta performance para Android e iOS.",
+    type: "Projetos",
+    image: "/app-mobile.jpg",
   },
 ]
 
@@ -220,11 +238,11 @@ export function TimelineSection() {
                   >
                     <div className="flex flex-col sm:flex-row overflow-hidden rounded-lg border-2 border-foreground/10 bg-card shadow-sm transition-shadow hover:shadow-md">
                       {exp.image && (
-                        <div className="sm:w-2/5 shrink-0">
+                        <div className="sm:w-2/5 shrink-0 overflow-hidden flex items-center justify-center">
                           <img
                             src={exp.image}
                             alt={exp.company}
-                            className="h-48 sm:h-full w-full object-cover bg-muted"
+                            className="h-48 sm:h-full w-full object-cover scale-[1.04]"
                             loading="lazy"
                           />
                         </div>
